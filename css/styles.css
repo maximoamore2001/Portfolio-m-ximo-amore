@@ -199,6 +199,21 @@ body.dark {
     width: 1em;
 }
 
+.projects__link{
+    margin: 0;
+    padding: 0;
+    opacity: .9;
+    
+}
+
+.arrow{
+   font-size: .8em;
+}
+
+.projects__link:hover{
+    text-decoration: underline;
+}
+
 .card__link:hover {
     margin-bottom: .7em;
     text-decoration: underline;

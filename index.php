@@ -1,3 +1,50 @@
+<?php
+
+if(isset($_POST["email"]) && isset($_POST["texto"])){
+
+  $email = ($_POST["email"]);
+  $texto = ($_POST["texto"]);
+  
+  $destinatario = 'maxiamorerc88@gmail.com';
+  $asunto = 'Email de prueba';
+
+  $cuerpo = '
+
+        <html>
+            <head>
+            <title>Prueba de correo</title>
+            </head>
+            <body>
+            <h1 style="color: blue;" >Email de: <br> ' . $email . '</h1>
+            <h2> mensaje: <br> ' . $texto . ' </h2>
+            </body>
+        </html>
+        ';
+
+  //para el envio
+  $headers = "MIME-Version: 1.0\r\n";
+  $headers .= "content-type: text/html; charset=utf-8\r\n";
+
+  //direccion del remitente
+
+  $headers .= "From: $email\r\n";
+
+  //ruta del mensaje desde origen a destino
+  $headers .= "Return-path: $destinatario\r\n";
+
+  mail($destinatario, $asunto, $cuerpo, $headers);
+
+  $msg =  " <p class='form__sendmail'>  ¡enviado con éxito!  </p>";
+}
+ else {
+  echo "";
+}
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,13 +71,13 @@
     </div>
 
     <div id="flags" class="flags">
-     <!--<div class="flags__item" data-language="es">
+      <!--<div class="flags__item" data-language="es">
          <img class="flags__img" src="./assets/icons/Flag_of_Argentina.svg.png">
       </div>
       <div class="flags__item" data-language="en">
         <img class="flags__img" src="./assets/icons/Flag_of_the_United_States.svg.png">
       </div>
-      --> 
+      -->
     </div>
 
     <div id="toggle-colors" class="colors">
@@ -238,12 +285,12 @@
           <div class="second__info">
             <div>
               <h3 class="second__more--projects"><a href="https://github.com/maximoamore2001/Funenses-aberturas.git" target="_blank" class="projects__link">Fuenenses Aberturas</a> <i class="fa-solid arrow fa-up-right-from-square"></i></h3>
-              <p class="second__description--more--projects">Landing page acerca de una empresa de aberturas, 
+              <p class="second__description--more--projects">Landing page acerca de una empresa de aberturas,
                 en la cual utilizé HTML, CSS y PHP.
             </div>
             <div>
               <h3 class="second__more--projects"><a href="https://github.com/maximoamore2001/Digitex.git" target="_blank" class="projects__link">Digitex</a> <i class="fa-solid arrow fa-up-right-from-square"></i></h3>
-              <p class="second__description--more--projects">Sitio web sobre la creación de páginas web 
+              <p class="second__description--more--projects">Sitio web sobre la creación de páginas web
                 personalizadas y desarrollos en Wordpress.
             </div>
             <div>
@@ -254,7 +301,7 @@
             <div>
               <h3 class="second__more--projects"><a href="https://github.com/maximoamore2001/prottech.git" target="_blank" class="projects__link">Prottech Mantenimientos</a> <i class="fa-solid arrow fa-up-right-from-square"></i></h3>
               <p class="second__description--more--projects">Empresa de mantenimientos de galpones industriales,
-                donde usé HTML, CSS, PHP Y JAVASCRYPT. 
+                donde usé HTML, CSS, PHP Y JAVASCRYPT.
             </div>
           </div>
         </div>
@@ -264,18 +311,30 @@
       <article class="card card--third">
         <h2 class="card__title">Sobre mí</h2>
         <div class="third">
-            <ul class="third__about-me">
-              <h3 class="third__subtitle">Habilidades:</h3>
-              <li><h5><i class="fa-solid fa-image"></i> &nbsp;Editor de videos y fotografías</h5></li>
-              <li><h5><i class="fa-solid fa-microchip"></i> &nbsp;Ensamblado de hardware</h5></li>
-              <li><h5><i class="fa-brands fa-unity"></i> &nbsp;Desarrollo en Wordpress</h5></li>
-              <h3 class="third__subtitle">Hobbies:</h3>
-              <li><h5><i class="fa-regular fa-futbol"></i> &nbsp;Ejercicio físico y Fútbol</h5></li>
-              <li><h5><i class="fa-solid fa-book"></i> &nbsp;Lectura de libros</h5></li>
-              <li><h5><i class="fa-solid fa-earth-americas"></i> &nbsp;Astronomía y Geografía</h5></li>
-            </ul>
+          <ul class="third__about-me">
+            <h3 class="third__subtitle">Habilidades:</h3>
+            <li>
+              <h5><i class="fa-solid fa-image"></i> &nbsp;Editor de videos y fotografías</h5>
+            </li>
+            <li>
+              <h5><i class="fa-solid fa-microchip"></i> &nbsp;Ensamblado de hardware</h5>
+            </li>
+            <li>
+              <h5><i class="fa-brands fa-unity"></i> &nbsp;Desarrollo en Wordpress</h5>
+            </li>
+            <h3 class="third__subtitle">Hobbies:</h3>
+            <li>
+              <h5><i class="fa-regular fa-futbol"></i> &nbsp;Ejercicio físico y Fútbol</h5>
+            </li>
+            <li>
+              <h5><i class="fa-solid fa-book"></i> &nbsp;Lectura de libros</h5>
+            </li>
+            <li>
+              <h5><i class="fa-solid fa-earth-americas"></i> &nbsp;Astronomía y Geografía</h5>
+            </li>
+          </ul>
 
-          </div>
+        </div>
         </div>
       </article>
 
@@ -283,7 +342,7 @@
         <h2 class="card__title card__title--contacto">Contacto</h2>
         <div class="card__form">
           <div class="form__container">
-            <form class="form" action="enviar.php" method="POST">
+            <form class="form" method="POST">
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email" required>
@@ -294,6 +353,9 @@
               </div>
               <button class="form-submit-btn" type="submit">Submit</button>
             </form>
+            <?php if (isset($msg)) {
+              echo $msg;
+            } ?>
           </div>
         </div>
         </div>

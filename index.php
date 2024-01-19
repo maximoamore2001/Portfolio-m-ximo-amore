@@ -41,8 +41,6 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
   echo "";
 }
 
-
-
 ?>
 
 
@@ -353,9 +351,7 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
                 <textarea name="texto" id="texto" rows="10" cols="50" required></textarea>
               </div>
               <div style="display: flex;"><button class="form-submit-btn" type="submit">Submit</button>
-              <?php if (isset($msg)) {
-              echo $msg;
-            } ?>
+              <?php if (isset($msg)) { echo $msg; } //ejecuta el mensaje ?>
             </div>
             </form>
           </div>

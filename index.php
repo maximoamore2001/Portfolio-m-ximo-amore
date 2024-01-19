@@ -35,7 +35,7 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
 
   mail($receptor, $asunto, $cuerpo, $headers);
 
-  $msg =  " <p class='form__sendmail' style='text-decoration: underline; color: var(--primary-color);' >  ¡enviado con éxito!  </p>";
+  $msg =  " <p class='form__sendmail' style='font-size: 1.1em; padding: 5px 0 0 15px ; text-decoration: underline; color: var(--primary-color);' >  Mensaje enviado!  </p>";
 }
  else {
   echo "";
@@ -352,11 +352,12 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
                 <label for="textarea">Cómo puedo ayudarte?</label>
                 <textarea name="texto" id="texto" rows="10" cols="50" required></textarea>
               </div>
-              <button class="form-submit-btn" type="submit">Submit</button>
-            </form>
-            <?php if (isset($msg)) {
+              <div style="display: flex;"><button class="form-submit-btn" type="submit">Submit</button>
+              <?php if (isset($msg)) {
               echo $msg;
             } ?>
+            </div>
+            </form>
           </div>
         </div>
         </div>

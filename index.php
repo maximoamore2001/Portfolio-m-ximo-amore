@@ -35,7 +35,7 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
 
   mail($receptor, $asunto, $cuerpo, $headers);
 
-  $msg =  " <p class='form__sendmail' style='font-size: 1.1em; padding: 5px 0 0 15px ; text-decoration: underline; color: var(--primary-color);' >  Mensaje enviado!  </p>";
+  $msg =  " <p class='form__sendmail' style='background-color: var(--bg-card-color); text-align: center; border: solid 2px var(--primary-color); width: 100vw; font-size: 1.1em; padding: 1em; color: var(--primary-color);' >  Gracias por contactarme! <br> Pronto me pondré en contacto contigo.  </p>";
 }
  else {
   echo "";
@@ -94,7 +94,7 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
        colors__item--orange"></div>
     </div>
   </header>
-
+  <?php if (isset($msg)) { echo $msg; } //ejecuta el mensaje ?>
   <main class="main">
     <section class="column column--left">
       <!-- Tarejeta del perfil -->
@@ -351,7 +351,6 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
                 <textarea name="texto" id="texto" rows="10" cols="50" required></textarea>
               </div>
               <div style="display: flex;"><button class="form-submit-btn" type="submit">Submit</button>
-              <?php if (isset($msg)) { echo $msg; } //ejecuta el mensaje ?>
             </div>
             </form>
           </div>

@@ -35,7 +35,7 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
 
   mail($receptor, $asunto, $cuerpo, $headers);
 
-  $msg =  " <p class='form__sendmail'>  ¡enviado con éxito!  </p>";
+  $msg =  " <p class='form__sendmail' style='text-decoration: underline; color: var(--primary-color);' >  ¡enviado con éxito!  </p>";
 }
  else {
   echo "";

@@ -1,12 +1,13 @@
 <?php
+//Envío de email
 
 if(isset($_POST["email"]) && isset($_POST["texto"])){
 
   $email = ($_POST["email"]);
   $texto = ($_POST["texto"]);
   
-  $destinatario = 'maxiamorerc88@gmail.com';
-  $asunto = 'Email de prueba';
+  $receptor = 'maxiamorerc88@gmail.com';
+  $asunto = 'Email';
 
   $cuerpo = '
 
@@ -15,8 +16,8 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
             <title>Prueba de correo</title>
             </head>
             <body>
-            <h1 style="color: blue;" >Email de: <br> ' . $email . '</h1>
-            <h2> mensaje: <br> ' . $texto . ' </h2>
+            <h1 style="color: black;" >Email de: <br> ' . $email . '</h1>
+            <h2 style="color: grey;"> mensaje: <br> ' . $texto . ' </h2>
             </body>
         </html>
         ';
@@ -30,9 +31,9 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
   $headers .= "From: $email\r\n";
 
   //ruta del mensaje desde origen a destino
-  $headers .= "Return-path: $destinatario\r\n";
+  $headers .= "Return-path: $receptor\r\n";
 
-  mail($destinatario, $asunto, $cuerpo, $headers);
+  mail($receptor, $asunto, $cuerpo, $headers);
 
   $msg =  " <p class='form__sendmail'>  ¡enviado con éxito!  </p>";
 }

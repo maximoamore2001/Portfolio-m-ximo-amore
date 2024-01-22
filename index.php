@@ -1,11 +1,11 @@
 <?php
 //Envío de email
 
-if(isset($_POST["email"]) && isset($_POST["texto"])){
+if (isset($_POST["email"]) && isset($_POST["texto"])) {
 
   $email = ($_POST["email"]);
   $texto = ($_POST["texto"]);
-  
+
   $receptor = 'maxiamorerc88@gmail.com';
   $asunto = 'Email';
 
@@ -36,8 +36,7 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
   mail($receptor, $asunto, $cuerpo, $headers);
 
   $msg =  " <p class='form__sendmail' style='background-color: var(--bg-card-color); text-align: center; border: solid 2px var(--primary-color); width: 100vw; font-size: 1.1em; padding: 1em; color: var(--primary-color);' >  Gracias por contactarme! <br> Pronto me pondré en contacto contigo.  </p>";
-}
- else {
+} else {
   echo "";
 }
 
@@ -51,7 +50,7 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -94,7 +93,10 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
        colors__item--orange"></div>
     </div>
   </header>
-  <?php if (isset($msg)) { echo $msg; } //ejecuta el mensaje ?>
+  <?php if (isset($msg)) {
+    echo $msg;
+  } //ejecuta el mensaje 
+  ?>
   <main class="main">
     <section class="column column--left">
       <!-- Tarejeta del perfil -->
@@ -110,10 +112,6 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
           <div class="card__link">
             <i class="fas fa-envelope icon"></i>
             <a href="mailto:maxiamorerc@gmail.com">Maxiamorerc@gmail.com</a>
-          </div>
-          <div class="card__link">
-            <i class="fas fa-phone-alt icon"></i>
-            <a href="tel:3412297991">+54 341-2297991</a>
           </div>
           <div class="card__link " style="margin-left: 2px;">
             <i class="fas fa-file-arrow-down icon"></i>
@@ -136,7 +134,7 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
 
         </div>
         <div class="card__btns">
-          <a href="https://github.com/maximoamore2001/Portfolio-m-ximo-amore.git" target="_blank"><button class="btn__social" type="submit"><i class="fa-brands fa-github"></i></button></a>
+          <a href="https://github.com/maximoamore2001/maximoamore2001" target="_blank"><button class="btn__social" type="submit"><i class="fa-brands fa-github"></i></button></a>
           <a href="https://www.instagram.com/maxi.amore?igsh=bmRzYTR1ZjBzaTdr&utm_source=qr" target="_blank"><button class="btn__social" type="submit"><i class="fa-brands fa-instagram"></i></button></a>
           <a href="#"><button class="btn__social" type="submit" target="_blank"><i class="fa-brands fa-linkedin"></i></button></a>
           <a href="https://wa.me/3412297991" target="_blank"><button class="btn__social" type="submit"><i class="fa-brands fa-whatsapp"></i></button></a>
@@ -311,7 +309,7 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
         <h2 class="card__title">Sobre mí</h2>
         <div class="third">
           <ul class="third__about-me">
-            <h3 class="third__subtitle">Habilidades:</h3>
+            <h3 class="third__subtitle">Habilidades y hobbies:</h3>
             <li>
               <h5><i class="fa-solid fa-image"></i> &nbsp;Editor de videos y fotografías</h5>
             </li>
@@ -321,7 +319,6 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
             <li>
               <h5><i class="fa-brands fa-unity"></i> &nbsp;Desarrollo en Wordpress</h5>
             </li>
-            <h3 class="third__subtitle">Hobbies:</h3>
             <li>
               <h5><i class="fa-regular fa-futbol"></i> &nbsp;Ejercicio físico y Fútbol</h5>
             </li>
@@ -343,28 +340,23 @@ if(isset($_POST["email"]) && isset($_POST["texto"])){
           <div class="form__container">
             <form class="form" method="POST">
               <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">tu correo electrónico</label>
                 <input type="text" id="email" name="email" required>
               </div>
               <div class="form-group">
                 <label for="textarea">Cómo puedo ayudarte?</label>
                 <textarea name="texto" id="texto" rows="10" cols="50" required></textarea>
               </div>
-              <div style="display: flex;"><button class="form-submit-btn" type="submit">Submit</button>
-            </div>
+              <div style="display: flex;"><button class="form-submit-btn" type="submit">Enviar</button>
+              </div>
             </form>
           </div>
         </div>
         </div>
       </article>
-
-
-
-
     </section>
 
   </main>
-
   <script src="js/scripts.js"></script>
 </body>
 

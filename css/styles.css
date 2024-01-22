@@ -415,7 +415,7 @@ body.dark {
 
 .third__about-me h5{
     font-size: 1em;
-    margin: 0;
+    margin: 1em 0;
 }
 
 .third__subtitle{
@@ -606,4 +606,3 @@ body.dark {
     border: 1px var(--text-color) solid;
     color: var(--primary-color);
 }
-

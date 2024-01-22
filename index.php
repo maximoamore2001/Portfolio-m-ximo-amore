@@ -309,7 +309,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
         <h2 class="card__title">Sobre mí</h2>
         <div class="third">
           <ul class="third__about-me">
-            <h3 class="third__subtitle">Habilidades y hobbies:</h3>
+            <h3 class="third__subtitle">Hobbies & habilidades:</h3>
             <li>
               <h5><i class="fa-solid fa-image"></i> &nbsp;Editor de videos y fotografías</h5>
             </li>
@@ -317,13 +317,16 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
               <h5><i class="fa-solid fa-microchip"></i> &nbsp;Ensamblado de hardware</h5>
             </li>
             <li>
-              <h5><i class="fa-brands fa-unity"></i> &nbsp;Desarrollo en Wordpress</h5>
+              <h5><i class="fa-brands fa-wordpress"></i></i> &nbsp;Desarrollo en Wordpress</h5>
             </li>
             <li>
               <h5><i class="fa-regular fa-futbol"></i> &nbsp;Ejercicio físico y Fútbol</h5>
             </li>
             <li>
               <h5><i class="fa-solid fa-book"></i> &nbsp;Lectura de libros</h5>
+            </li>
+            <li>
+              <h5><i class="fa-brands fa-unity"></i> &nbsp;Modelado 3D</h5>
             </li>
             <li>
               <h5><i class="fa-solid fa-earth-americas"></i> &nbsp;Astronomía y Geografía</h5>

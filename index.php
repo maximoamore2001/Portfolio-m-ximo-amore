@@ -1,4 +1,7 @@
+
+
 <?php
+
 //Envío de email
 
 if (isset($_POST["email"]) && isset($_POST["texto"])) {
@@ -39,8 +42,8 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
 } else {
   echo "";
 }
-
 ?>
+
 
 
 <!DOCTYPE html>
@@ -69,7 +72,10 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
     </div>
 
     <div id="flags" class="flags">
-      <!--<div class="flags__item" data-language="es">
+      <!--
+      -Proximamente será incluida la siguiente sección de cambio de idioma-
+
+      <div class="flags__item" data-language="es">
          <img class="flags__img" src="./assets/icons/Flag_of_Argentina.svg.png">
       </div>
       <div class="flags__item" data-language="en">
@@ -102,7 +108,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
       <!-- Tarejeta del perfil -->
       <article class="card card--profile">
         <div class="card__image-container">
-          <img src="./assets/images/Portfolio-img.jpg" alt="">
+          <img src="./assets/images/FullSizeRender.jpg" alt="">
         </div>
         <div class="card__header">
           <h2 class="card__title--name">Máximo Amore</h2>
@@ -336,7 +342,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
         </div>
         </div>
       </article>
-
+      
       <article class="card card--second">
         <h2 class="card__title card__title--contacto">Contacto</h2>
         <div class="card__form">
@@ -356,7 +362,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
           </div>
         </div>
         </div>
-      </article>
+      </article> 
     </section>
 
   </main>

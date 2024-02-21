@@ -134,7 +134,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
           <h3 class="card__h3">¿Qué empleo estoy buscando?</h3>
           <p class="card__text">Estoy buscando un trabajo de manera remota en lo posible,
             donde pueda seguir trabajando en proyectos, tanto en front-end como en back-end. <br>
-            Además me encuentro aprendiendo Java para seguir creciendo en la industria.
+            Además me encuentro aprendiendo Java para seguir expandiendo mis conocimientos en el desarrollo de software.
           </p>
 
 
@@ -160,10 +160,6 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
           </div>
           <div class="skills">
             <div class="skills__item">
-              <p class="skills__tech">Html</p>
-              <div class="skills__bar skills__bar--90"></div>
-            </div>
-            <div class="skills__item">
               <p class="skills__tech">Css</p>
               <div class="skills__bar skills__bar--50"></div>
             </div>
@@ -187,6 +183,10 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
               <p class="skills__tech">Git</p>
               <div class="skills__bar skills__bar--70"></div>
             </div>
+            <div class="skills__item">
+              <p class="skills__tech">Jquery</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
           </div>
         </div>
       </article>
@@ -199,11 +199,10 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
             <p class="second__time">2022 - Ahora</p>
             <h3 class="second__job">Full-stack developer</h3>
             <p class="second__description">
-              Mi experiencia de trabajo se destaca en mis projectos como desarrollador, donde empleo todos mis
+              Mi experiencia de trabajo se destaca en mis proyectos como desarrollador, donde empleo todos mis
               conocimientos aprendidos.
-              <br> Realizando un sistema de ventas y una tienda online completamente hecha por mí. <br> Por el momento
-              no
-              cuento con experiencia en una empresa.
+              <br> Realizando un sistema de ventas y una tienda online completamente creada por mí. <br> Por el momento
+              no cuento con experiencia en una empresa.
             </p>
           </div>
         </div>
@@ -211,11 +210,11 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
 
       <article class="card card--second">
         <h2 class="card__title">Idiomas</h2>
-        <small>Castellano (nativo) - Inglés (estudiando)</small>
+        <small>Castellano - Inglés</small>
         <div class="second">
           <div class="second__info">
             <p class="second__time">Feb 2017 - Ahora</p>
-            <h3 class="second__job">Nivel actual A2 - B1</h3>
+            <h3 class="second__job">Nivel actual B1</h3>
             <p class="second__description">
               Llevo varios años practicando el inglés, actualmente estudio en una academia. <br>
               Puedo tener conversaciones cotidianas, interpretar textos, redactar y entender conversaciones sin muchas
@@ -250,13 +249,13 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
         <div class="card_projects">
           <div class="second__info">
             <p class="second__time">marzo 2023 - abril 2023</p>
-            <h3 class="second__job">Sistema gestionable de ventas</h3>
-            <p class="second__description--projects">sistema de gestion de clientes, productos y ventas. realizado en PHP, MVC, js, ajax, jquery y MYSQL.</p>
+            <h3 class="second__job">Inmobiliaria</h3>
+            <p class="second__description--projects">sistema autogestionable de ventas inmobiliarias con Php, Laravel, Js, Ajax, Jquery, Mysql y Bootstrap.</p>
             <a href="https://github.com/maximoamore2001/sistema_ventas.git" target="_blank" class="second__link">abrir enlace</a>
             <div class="image-card">
-              <img src="./assets/images/abmventas.png" alt="Imagen 1">
+              <img src="./assets/images/Inmobiliaria.PNG" alt="Imagen 1">
               <div class="overlay">
-                <div class="text">Sistema de ventas</div>
+                <div class="text">Inmobiliaria Terranova</div>
               </div>
             </div>
           </div>
@@ -268,14 +267,13 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
         <div class="card_projects">
           <div class="second__info">
             <p class="second__time">enero 2023 - febrero 2023</p>
-            <h3 class="second__job">ABM clientes</h3>
-            <p class="second__description--projects">alta, baja y modificacion de un registro de clientes. realizado en
-              Html, Css, Php, Bootstrap y Json.</p>
+            <h3 class="second__job">Cafetería</h3>
+            <p class="second__description--projects">Alta, Baja y Modificación de productos. realizado en Php, Laravel, Js, Mysql y Bootstrap.</p>
             <a href="https://github.com/maximoamore2001/abmclientes.git" target="_blank" class="second__link">abrir enlace</a>
             <div class="image-card">
-              <img src="./assets/images/abmclientes.png" alt="Imagen 1">
+              <img src="./assets/images/cafe.PNG" alt="Imagen 1">
               <div class="overlay">
-                <div class="text">Alta, Baja y Modificación de clientes</div>
+                <div class="text">Café Veneto</div>
               </div>
             </div>
           </div>

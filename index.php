@@ -161,7 +161,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
           <div class="skills">
             <div class="skills__item">
               <p class="skills__tech">Css</p>
-              <div class="skills__bar skills__bar--50"></div>
+              <div class="skills__bar skills__bar--90"></div>
             </div>
             <div class="skills__item">
               <p class="skills__tech">JavaScrypt</p>
@@ -173,7 +173,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
             </div>
             <div class="skills__item">
               <p class="skills__tech">Laravel</p>
-              <div class="skills__bar skills__bar--90"></div>
+              <div class="skills__bar skills__bar--70"></div>
             </div>
             <div class="skills__item">
               <p class="skills__tech">Jquery</p>
@@ -230,7 +230,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
 
           <div class="second__info">
             <p class="second__time">dic 2023 - ene 2024</p>
-            <h3 class="second__job">Restaurante</h3>
+            <h3 class="second__job">Restaurante <i style="color: var(--primary-color); font-size: 16px;" class="fa-solid fa-star"></i></h3>
             <p class="second__description--projects">Local de hamburguesas con carrito de compras, sistema de
               administración, formularios y MercadoPago.</p>
             <a href="https://github.com/maximoamore2001/Burgers_2023.git" target="_blank" class="second__link">abrir enlace</a>

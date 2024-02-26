@@ -269,7 +269,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
             <p class="second__time">enero 2023 - febrero 2023</p>
             <h3 class="second__job">Cafetería</h3>
             <p class="second__description--projects">Alta, Baja y Modificación de productos. realizado en Php, Laravel, Js, Mysql y Bootstrap.</p>
-            <a href="https://github.com/maximoamore2001/abmclientes.git" target="_blank" class="second__link">abrir enlace</a>
+            <a href="https://github.com/maximoamore2001/cafeteria" target="_blank" class="second__link">abrir enlace</a>
             <div class="image-card">
               <img src="./assets/images/cafe.PNG" alt="Imagen 1">
               <div class="overlay">

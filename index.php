@@ -152,7 +152,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
     <section class="column column--right">
       <article class="card">
         <h2 class="card__title">Habilidades</h2>
-        <small>Tiempo dedicado</small>
+        <small>Tiempo de uso</small>
         <div class="skills">
           <div class="skills__header">
             <span class="skills__start-level">0</span>
@@ -160,31 +160,31 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
           </div>
           <div class="skills">
             <div class="skills__item">
-              <p class="skills__tech">Css</p>
+              <p class="skills__tech">CSS</p>
               <div class="skills__bar skills__bar--90"></div>
             </div>
             <div class="skills__item">
-              <p class="skills__tech">JavaScrypt</p>
+              <p class="skills__tech">JAVASCRIPT</p>
               <div class="skills__bar skills__bar--60"></div>
             </div>
             <div class="skills__item">
-              <p class="skills__tech">Php</p>
+              <p class="skills__tech">PHP</p>
               <div class="skills__bar skills__bar--90"></div>
             </div>
             <div class="skills__item">
-              <p class="skills__tech">Laravel</p>
+              <p class="skills__tech">LARAVEL</p>
               <div class="skills__bar skills__bar--70"></div>
             </div>
             <div class="skills__item">
-              <p class="skills__tech">Jquery</p>
+              <p class="skills__tech">JQUERY</p>
               <div class="skills__bar skills__bar--40"></div>
             </div>
             <div class="skills__item">
-              <p class="skills__tech">Git</p>
+              <p class="skills__tech">GIT</p>
               <div class="skills__bar skills__bar--70"></div>
             </div>
             <div class="skills__item">
-              <p class="skills__tech">Jquery</p>
+              <p class="skills__tech">MYSQL</p>
               <div class="skills__bar skills__bar--60"></div>
             </div>
           </div>

@@ -251,7 +251,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
             <p class="second__time">marzo 2023 - abril 2023</p>
             <h3 class="second__job">Inmobiliaria</h3>
             <p class="second__description--projects">sistema autogestionable de ventas inmobiliarias con Php, Laravel, Js, Ajax, Jquery, Mysql y Bootstrap.</p>
-            <a href="https://github.com/maximoamore2001/sistema_ventas.git" target="_blank" class="second__link">abrir enlace</a>
+            <a href="https://github.com/maximoamore2001/inmobiliaria" target="_blank" class="second__link">abrir enlace</a>
             <div class="image-card">
               <img src="./assets/images/Inmobiliaria.PNG" alt="Imagen 1">
               <div class="overlay">

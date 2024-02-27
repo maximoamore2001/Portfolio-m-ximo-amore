@@ -229,7 +229,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
         <div class="card_projects">
 
           <div class="second__info">
-            <p class="second__time">dic 2023 - ene 2024</p>
+            <p class="second__time">nov 2023 - dic 2023</p>
             <h3 class="second__job">Restaurante <i style="color: var(--primary-color); font-size: 16px;" class="fa-solid fa-star"></i></h3>
             <p class="second__description--projects">Local de hamburguesas con carrito de compras, sistema de
               administración, formularios y MercadoPago.</p>
@@ -248,7 +248,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
         <h2 class="card__title--projects">Proyecto &#8544;&#8544;</h2>
         <div class="card_projects">
           <div class="second__info">
-            <p class="second__time">marzo 2023 - abril 2023</p>
+            <p class="second__time">ene 2024 - feb 2024</p>
             <h3 class="second__job">Inmobiliaria</h3>
             <p class="second__description--projects">sistema autogestionable de ventas inmobiliarias con Php, Laravel, Js, Ajax, Jquery, Mysql y Bootstrap.</p>
             <a href="https://github.com/maximoamore2001/inmobiliaria" target="_blank" class="second__link">abrir enlace</a>
@@ -266,7 +266,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
         <h2 class="card__title--projects">Proyecto &#8544;&#8544;&#8544;</h2>
         <div class="card_projects">
           <div class="second__info">
-            <p class="second__time">enero 2023 - febrero 2023</p>
+            <p class="second__time">dic 2023 - ene 2024</p>
             <h3 class="second__job">Cafetería</h3>
             <p class="second__description--projects">Alta, Baja y Modificación de productos. realizado en Php, Laravel, Js, Mysql y Bootstrap.</p>
             <a href="https://github.com/maximoamore2001/cafeteria" target="_blank" class="second__link">abrir enlace</a>
@@ -348,7 +348,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
             <form class="form" method="POST">
               <div class="form-group">
                 <label for="email">tu correo electrónico</label>
-                <input type="text" id="email" name="email" required>
+                <input style="color: grey;" type="text" id="email" name="email" required>
               </div>
               <div class="form-group">
                 <label for="textarea">Cómo puedo ayudarte?</label>

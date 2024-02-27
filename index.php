@@ -348,7 +348,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
             <form class="form" method="POST">
               <div class="form-group">
                 <label for="email">tu correo electrónico</label>
-                <input style="color: grey;" type="text" id="email" name="email" required>
+                <input style="color: var(--text-color);" type="text" id="email" name="email" required>
               </div>
               <div class="form-group">
                 <label for="textarea">Cómo puedo ayudarte?</label>

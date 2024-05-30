@@ -131,7 +131,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
             pero siempre fui un apasionado de la computación, lo que hizo que descubriera el mundo de la
             programación.<br>
           </p>
-          <h3 class="card__h3">¿Qué empleo estoy buscando?</h3>
+          <h3 class="card__h3">Empleo:</h3>
           <p class="card__text">Estoy buscando un trabajo de manera remota en lo posible,
             donde pueda seguir trabajando en proyectos, tanto en front-end como en back-end. <br>
             Además me encuentro aprendiendo Java para seguir expandiendo mis conocimientos en el desarrollo de software.
@@ -152,7 +152,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
     <section class="column column--right">
       <article class="card">
         <h2 class="card__title">Habilidades</h2>
-        <small>Tiempo de uso</small>
+        <small>Tiempo Invertido</small>
         <div class="skills">
           <div class="skills__header">
             <span class="skills__start-level">0</span>
@@ -165,7 +165,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
             </div>
             <div class="skills__item">
               <p class="skills__tech">JAVASCRIPT</p>
-              <div class="skills__bar skills__bar--60"></div>
+              <div class="skills__bar skills__bar--50"></div>
             </div>
             <div class="skills__item">
               <p class="skills__tech">PHP</p>
@@ -173,7 +173,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
             </div>
             <div class="skills__item">
               <p class="skills__tech">LARAVEL</p>
-              <div class="skills__bar skills__bar--70"></div>
+              <div class="skills__bar skills__bar--90"></div>
             </div>
             <div class="skills__item">
               <p class="skills__tech">JQUERY</p>
@@ -181,7 +181,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
             </div>
             <div class="skills__item">
               <p class="skills__tech">GIT</p>
-              <div class="skills__bar skills__bar--70"></div>
+              <div class="skills__bar skills__bar--80"></div>
             </div>
             <div class="skills__item">
               <p class="skills__tech">MYSQL</p>

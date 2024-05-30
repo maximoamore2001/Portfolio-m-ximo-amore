@@ -253,7 +253,7 @@ if (isset($_POST["email"]) && isset($_POST["texto"])) {
             <p class="second__description--projects">sistema autogestionable de ventas inmobiliarias con Php, Laravel, Js, Ajax, Jquery, Mysql y Bootstrap.</p>
             <a href="https://github.com/maximoamore2001/inmobiliaria" target="_blank" class="second__link">abrir enlace</a>
             <div class="image-card">
-              <img src="./assets/images/Inmobiliaria.PNG" alt="Imagen 1">
+              <img src="./files/Captura.png" alt="Imagen 1">
               <div class="overlay">
                 <div class="text">Inmobiliaria Terranova</div>
               </div>
